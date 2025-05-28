@@ -6,8 +6,8 @@ const UUID = process.env.UUID || '986e0d08-b275-4dd3-9e75-f3094b36fa2a'; //若�
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.f4i.cn';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || 'N9BVoBfucVIrIzCBt8';   // 没用哪吒，把这个参数空着
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'choreo.zzx.free.hr';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiOGI5NzI0MDgwZTU1ZTcwMzcwZmI3NDI4NzkyMmYzMWIiLCJ0IjoiOGNlY2VlYzQtYzZiNi00N2VkLThhZjItY2I4MThmMDkxZWJkIiwicyI6Ik5XWTFNV1ZsWm1NdFpEYzJZeTAwWkdSaExUbGtZall0TnpneVpqZ3haVE00WkRBNSJ9';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'ytmous.eu.org;     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
+const ARGO_AUTH = process.env.ARGO_AUTH || 'dmxlc3M6Ly85ODZlMGQwOC1iMjc1LTRkZDMtOWU3NS1mMzA5NGIzNmZhMmFAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1jaG9yZW8uenp4LmZyZWUuaHImdHlwZT13cyZob3N0PWNob3Jlby56enguZnJlZS5ociZwYXRoPSUyRnZsZXNzLWFyZ28lM0ZlZCUzRDIwNDgjQ2hvcmVvLVVTLU1pY3Jvc29mdF9BenVyZQoKdm1lc3M6Ly9leUoySWpvaU1pSXNJbkJ6SWpvaVEyaHZjbVZ2TFZWVExVMXBZM0p2YzI5bWRGOUJlblZ5WlNJc0ltRmtaQ0k2SW5kM2R5NTJhWE5oTG1OdmJTNTBkeUlzSW5CdmNuUWlPaUkwTkRNaUxDSnBaQ0k2SWprNE5tVXdaREE0TFdJeU56VXROR1JrTXkwNVpUYzFMV1l6TURrMFlqTTJabUV5WVNJc0ltRnBaQ0k2SWpBaUxDSnpZM2tpT2lKdWIyNWxJaXdpYm1WMElqb2lkM01pTENKMGVYQmxJam9pYm05dVpTSXNJbWh2YzNRaU9pSmphRzl5Wlc4dWVucDRMbVp5WldVdWFISWlMQ0p3WVhSb0lqb2lMM1p0WlhOekxXRnlaMjgvWldROU1qQTBPQ0lzSW5Sc2N5STZJblJzY3lJc0luTnVhU0k2SW1Ob2IzSmxieTU2ZW5ndVpuSmxaUzVvY2lJc0ltRnNjRzRpT2lJaWZRPT0KCnRyb2phbjovLzk4NmUwZDA4LWIyNzUtNGRkMy05ZTc1LWYzMDk0YjM2ZmEyYUB3d3cudmlzYS5jb20udHc6NDQzP3NlY3VyaXR5PXRscyZzbmk9Y2hvcmVvLnp6eC5mcmVlLmhyJnR5cGU9d3MmaG9zdD1jaG9yZW8uenp4LmZyZWUuaHImcGF0aD0lMkZ0cm9qYW4tYXJnbyUzRmVkJTNEMjA0OCNDaG9yZW8tVVMtTWljcm9zb2Z0X0F6dXJl';
 const CFIP = process.env.CFIP || 'www.visa.com.tw';
 const NAME = process.env.NAME || 'Choreo';
 
