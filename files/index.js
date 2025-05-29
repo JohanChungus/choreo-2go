@@ -41,29 +41,29 @@ app.get('/sub', (req, res) => {
 });
 
 // run-nezha
-  let NEZHA_TLS = '';
-  if (NEZHA_SERVER && NEZHA_PORT && NEZHA_KEY) {
-    const tlsPorts = ['443', '8443', '2096', '2087', '2083', '2053'];
-    if (tlsPorts.includes(NEZHA_PORT)) {
-      NEZHA_TLS = '--tls';
-    } else {
-      NEZHA_TLS = '';
-    }
-  const command = `nohup ./swith -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY} ${NEZHA_TLS} >/dev/null 2>&1 &`;
-  try {
-    exec(command);
-    console.log('swith is running');
+//  let NEZHA_TLS = '';
+//  if (NEZHA_SERVER && NEZHA_PORT && NEZHA_KEY) {
+ //   const tlsPorts = ['443', '8443', '2096', '2087', '2083', '2053'];
+ //   if (tlsPorts.includes(NEZHA_PORT)) {
+ //     NEZHA_TLS = '--tls';
+  //  } else {
+ //     NEZHA_TLS = '';
+ //   }
+//  const command = `nohup ./swith -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY} ${NEZHA_TLS} >/dev/null 2>&1 &`;
+//  try {
+ //   exec(command);
+//    console.log('swith is running');
 
-    setTimeout(() => {
-      runWeb();
-    }, 2000);
-  } catch (error) {
-    console.error(`swith running error: ${error}`);
-  }
-} else {
-  console.log('NEZHA variable is empty, skip running');
-  runWeb();
-}
+ //   setTimeout(() => {
+   //   runWeb();
+  //  }, 2000);
+//  } catch (error) {
+//    console.error(`swith running error: ${error}`);
+//  }
+//} else {
+//  console.log('NEZHA variable is empty, skip running');
+//  runWeb();
+//}
 
 // run-xr-ay
 function runWeb() {
