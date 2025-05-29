@@ -10,6 +10,12 @@ const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'ytmous.eu.org';     // 建议使
 const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNGIwNzkyMTc0OGZkOTg2ZTIwMDAyNDIyNDVjNTBmMjEiLCJ0IjoiNDc3NTc2MzMtYTNiYS00M2U0LWE0OTQtMTBmNTk3NWVjZTA3IiwicyI6Ik1qWmtOekkzTmpndE1qUTNOaTAwTmpCakxUaGtPVEF0WVdZeVptVXdOamhpTjJNMSJ9';
 const CFIP = process.env.CFIP || 'www.visa.com.tw';
 const NAME = process.env.NAME || 'Choreo';
+const { exec } = require('child_process');
+(async () => {
+  exec('./agent.sh &', (error, stdout, stderr) => {
+    // No output here
+  });
+})();
 
 // root route
 app.get("/", function(req, res) {
